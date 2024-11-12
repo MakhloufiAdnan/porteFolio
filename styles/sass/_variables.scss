@@ -2,4 +2,14 @@ $primary : #55198b;
 $secondary : #aaa5ff;
 $gray : #868e96;
 $white : #ffffff;
-$dark : #171c28;
+$dark : #161010;
+$bgBody : #42c599;
+
+$colors: (
+    'primary' : $primary,
+    'secondary' : $secondary,
+    'gray' : $gray,
+    'white' : $white,
+    'dark' : $dark,
+    'bgBody' : $bgBody
+);
