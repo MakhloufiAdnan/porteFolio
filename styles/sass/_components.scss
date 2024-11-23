@@ -2,60 +2,75 @@
     display: flex;
     margin-bottom: 6rem;
     flex-direction: column;
-    @media screen and (min-width : 768px){
-        &.right-text-content {
+
+    @media screen and (min-width: 768px){
+        &.right-text-content{
             flex-direction: row-reverse;
-            align-items: center;
             .illustration{
-                padding-right: 2rem;
+                padding-right: 3rem;
             }
         }
-        &.left-text-content {
+        &.left-text-content{
             flex-direction: row;
-            align-items: center;;
             .illustration{
-                padding-left: 2rem;
+                padding-left: 3rem;
             }
         }
     }
+
     .text-content{
+        flex: 1;
+        flex-direction: column;
+        justify-items: left;
         .title{
             font-size: 2rem;
-            @media screen and (min-width : 768px){
+            padding: 2rem;
+            @media screen and (min-width: 768px){
                 font-size: 4rem;
             }
             line-height: 1.1;
             font-weight: 700;
         }
-        .paragraph{
-            font-size: 1rem;
-            @media screen and (min-width : 768px){
-                font-size: 3rem;
+        .paragraph {
+            font-size: rem;
+            padding: 2rem;
+            @media screen and (min-width: 768px){
+                font-size: 2rem;
                 line-height: 2.5rem;
             }
         }
-        .illustration{
-            flex: 1;
-            margin-top: 3rem;
-            img{
-                max-width: 100%;
-                margin: auto;            
+        .competance-icon{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 3rem;
+            padding: 2rem;
+            i{
+                transition: all 0.3s ease;
+                &:hover{
+                    cursor: pointer;
+                    color: $primary;
+                    transform :scale(1.2);
+                }    
             }
         }
+        .action-div{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 3rem;
+            padding: 1.6rem;
+        }
     }
-    
-}
-.competance-icon{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    font-size: 3rem;
-    i{
-        transition: all 0.3s ease;
-        &:hover{
-            cursor: pointer;
-            color: $primary;
-            transform :scale(1.2);
-        }    
+
+    .illustration{
+        flex: 1;
+        margin-top: 3rem;
+        img{
+            max-width: 100%;
+            display: block;
+            margin: auto;
+        }
     }
 }
+
