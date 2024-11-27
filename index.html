@@ -8,12 +8,32 @@
     <link rel="stylesheet" href="/styles/css/main.css">
 </head>
 <body>
-    <header>
-        <h1>Titre</h1>
-    </header class= "header-website">
+    <header class="header-website">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/image/logo.png" alt="logo">
+            </div>
+            <div class="menu">
+                <label class="btn btn-primary menu-input-label" for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="menu-toggle" class="menu-input" title="Toggle Menu"/>
+                <div class="dropdown-menu">
+                    <ul class="nav-links">
+                        <li class="nav-link">
+                            <a href="#accueil">Accueil</a>
+                        </li>
+                        <li class="nav-link" >
+                            <a href="#competences">Compétences</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </nav>
+    </header>
     
     <main>
-        <section class="section-display left-text-content">
+        <section class="section-display left-text-content" id="accueil">
             <article class="text-content">
                 <h1 class="title"> Adnan MAKHLOUFI</h1>
                 <p class="paragraph">Ceci est mon portefolio, me permettant de me présenter et de présenter mon experience
@@ -31,7 +51,29 @@
                 <img src="/image/presentation.png" alt="presentation de Adnan MAKHLOUFI">
             </div>
         </section>
-        <section class="section-display right-text-content">
+        <section class="section-display right-text-content" id="competence">
+            <article class="text-content">
+                <h2 class="title"> Mes compétances</h2>
+                <p class="paragraph">Voivi mes compétances :
+                    
+                </p>
+                <div class="competance-icon">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-sass"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-java"></i>
+                    <i class="fa-brands fa-php"></i>
+                    <i class="fa-brands fa-aws"></i>
+                    <i class="fa-brands fa-docker"></i>
+                </div>
+            </article>
+            <div class="illustration">
+                <img src="/image/Mescompetances.png" alt="compétances">
+            </div>
+        </section>
+        <section class="section-display left-text-content">
             <article class="text-content">
                 <h2 class="title"> Mes compétances</h2>
                 <p class="paragraph">Voivi mes compétances :

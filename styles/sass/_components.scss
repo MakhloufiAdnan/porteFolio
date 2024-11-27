@@ -23,20 +23,20 @@
         flex-direction: column;
         justify-items: left;
         .title{
-            font-size: 2rem;
-            padding: 2rem;
+            font-size: 1rem;
             @media screen and (min-width: 768px){
                 font-size: 4rem;
+                padding: 2rem;
             }
             line-height: 1.1;
             font-weight: 700;
         }
         .paragraph {
             font-size: rem;
-            padding: 2rem;
             @media screen and (min-width: 768px){
                 font-size: 2rem;
                 line-height: 2.5rem;
+                padding: 2rem;
             }
         }
         .competance-icon{
